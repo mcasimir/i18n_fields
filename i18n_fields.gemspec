@@ -17,9 +17,11 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     "Gemfile",
+    "Gemfile.lock",
     "README.md",
     "Rakefile",
     "VERSION",
+    "i18n_fields.gemspec",
     "lib/i18n_fields.rb"
   ]
   s.homepage = "http://github.com/mcasimir/kaminari-bootstrap"
