@@ -2,7 +2,7 @@
 
 ## Translatable fields for [ActiveRecordSchema](https://github.com/mcasimir/active_record_schema)
 
-*I18n Fields* brings multilingual support to ActiveRecordSchema through `globalize3`.
+**I18n Fields** brings multilingual support to [ActiveRecordSchema](https://github.com/mcasimir/active_record_schema) through `globalize3`.
 
 ### Installation
 
