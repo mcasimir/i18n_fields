@@ -1,6 +1,35 @@
-# I18nFields
+# I18n Fields
 
-Translatable fields for ActiveRecordSchema
+## Translatable fields for [ActiveRecordSchema](https://github.com/mcasimir/active_record_schema)
+
+**I18n Fields** brings multilingual support to [ActiveRecordSchema](https://github.com/mcasimir/active_record_schema) through `globalize3`.
+
+### Installation
+
+``` rb
+gem 'i18n_fields'
+```
+
+### Usage
+
+``` rb
+class Post < ActiveRecord::Base
+
+  field :title, :translatable => true
+  field :text, :as => :text, :translatable => true
+
+end
+```
+
+### How to generate migrations
+
+For model with translatable fields you should generate an additional migration for translation model
+
+``` bash
+rails g migration:from post post/translation
+```
+
+Now learn how to use `globalize3` to actually translate your models either reading the [globalize docs](https://github.com/svenfuchs/globalize3) or watching this [Railscast episode](http://railscasts.com/episodes/338-globalize3).
 
 ---
 
